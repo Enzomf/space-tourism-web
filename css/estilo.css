@@ -22,7 +22,7 @@
 
 /* ----------------------------------------------------------- Home-------------------------------------------- */
 
-body {
+body#home  {
     background-image: url("../assets/home/background-home-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,7 +163,7 @@ main{
 }
 
 
-span#msg{
+#home span#msg{
     font-family:'Barlow Condensed', sans-serif ;
     font-size: 16px;
     letter-spacing: 2.7px;
@@ -207,6 +207,121 @@ main p{
 
 
 
-/* ======================================== */
+/* ========================================  destination =================================================*/
+
+body#Destination {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: auto;
+} 
+
+#Destination span#msg{
+    font-family:'Barlow Condensed', sans-serif ;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+
+#Destination img{
+    width: 70%;
+    margin-top: 20px;
+}
+
+#Destination ul {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#Destination ul li {
+    font-family: "Barlow Condensed", serif;
+    color: #D0D6F9;
+    padding: 15px;
+    font-size: 14px;
+    float: left;
+
+}
+
+
+
+
+#Destination h1{
+    font-size: 56px;
+}
+
+#description{
+
+    border-bottom: #fff 0.5px solid;
+    padding-bottom: 35px;       
+    line-height: 25px;
+}
+
+#data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+   align-items: center;
+
+}
+
+
+
+.dataTitle{
+
+ 
+    font-family: "Barlow Condensed", serif;
+    color: #D0D6F9;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+h2{
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+    
+}
+
+
+
+
+.Europa{
+    display: none ;
+}
+
+
+.Moon{
+    display: initial;
+}
+
+
+.Mars{
+    display: none;
+}
+
+.Titan {
+    display: none;
+}
+
+#Destination ul li.selected{
+    border-bottom:#D0D6F9 1px solid;
+    color: #FFFFFF;
+}
 
 }
