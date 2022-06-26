@@ -21,8 +21,8 @@ function redrec(c) {
             break
 
         case 4:
-            window.location.href ="tecnology.html"
-        break
+            window.location.href = "technology.html"
+            break
     }
 }
 
@@ -136,91 +136,144 @@ function destin(actualDestin) {
 }
 
 
-function crew(actualCrew){
+function crew(actualCrew) {
 
-    switch(actualCrew){
+    switch (actualCrew) {
         case 1:
-        
-        document.getElementById("imgCrew").src = "./assets/crew/image-douglas-hurley.png"
-        
-        document.getElementById("a").className = "SelectorCrew selectedCrew"
-        document.getElementById("commander").style.display ="block"
-        
-        document.getElementById("b").className = "SelectorCrew"
-        document.getElementById("pilot").style.display ="none"
-        
-        document.getElementById("c").className = "SelectorCrew"
-        document.getElementById("engineer").style.display ="none"
-        
-        document.getElementById("d").className = "SelectorCrew"
-        document.getElementById("specialist").style.display ="none"
-       
-        break
 
-        case 2:
+            document.getElementById("imgCrew").src = "./assets/crew/image-douglas-hurley.png"
 
-       document.getElementById("imgCrew").src = "./assets/crew/image-victor-glover.png"
-        
-        document.getElementById("a").className = "SelectorCrew"
-        document.getElementById("commander").style.display ="none"
-        
-        document.getElementById("b").className = "SelectorCrew selectedCrew"
-        document.getElementById("pilot").style.display ="initial"
+            document.getElementById("a").className = "SelectorCrew selectedCrew"
+            document.getElementById("commander").style.display = "block"
 
-        
-        document.getElementById("c").className = "SelectorCrew"
-        document.getElementById("engineer").style.display ="none"
+            document.getElementById("b").className = "SelectorCrew"
+            document.getElementById("pilot").style.display = "none"
 
-        
-        document.getElementById("d").className = "SelectorCrew"
-        document.getElementById("specialist").style.display ="none"
+            document.getElementById("c").className = "SelectorCrew"
+            document.getElementById("engineer").style.display = "none"
 
-
-
-        break
-
-        case 3:
-            document.getElementById("imgCrew").src = "./assets/crew/image-anousheh-ansari.png"
-        
-            document.getElementById("a").className = "SelectorCrew"
-            document.getElementById("commander").style.display ="none"
-
-            
-            document.getElementById("b").className = "SelectorCrew "
-            document.getElementById("pilot").style.display ="none"
-
-            
-            document.getElementById("c").className = "SelectorCrew selectedCrew"
-            document.getElementById("engineer").style.display ="initial"
-
-            
             document.getElementById("d").className = "SelectorCrew"
-            document.getElementById("specialist").style.display ="none"
+            document.getElementById("specialist").style.display = "none"
 
             break
 
-            case 4:
-                document.getElementById("imgCrew").src = "./assets/crew/image-mark-shuttleworth.png"
+        case 2:
 
-        
-                document.getElementById("a").className = "SelectorCrew"
-                document.getElementById("commander").style.display ="none"
+            document.getElementById("imgCrew").src = "./assets/crew/image-victor-glover.png"
 
-                
-                document.getElementById("b").className = "SelectorCrew "
-                document.getElementById("pilot").style.display ="none"
+            document.getElementById("a").className = "SelectorCrew"
+            document.getElementById("commander").style.display = "none"
 
-                
-                document.getElementById("c").className = "SelectorCrew "
-                document.getElementById("engineer").style.display ="none"
+            document.getElementById("b").className = "SelectorCrew selectedCrew"
+            document.getElementById("pilot").style.display = "initial"
 
-                
-                document.getElementById("d").className = "SelectorCrew selectedCrew"
-                document.getElementById("specialist").style.display ="initial"
 
-        
-        
-                break
+            document.getElementById("c").className = "SelectorCrew"
+            document.getElementById("engineer").style.display = "none"
+
+
+            document.getElementById("d").className = "SelectorCrew"
+            document.getElementById("specialist").style.display = "none"
+
+
+
+            break
+
+        case 3:
+            document.getElementById("imgCrew").src = "./assets/crew/image-anousheh-ansari.png"
+
+            document.getElementById("a").className = "SelectorCrew"
+            document.getElementById("commander").style.display = "none"
+
+
+            document.getElementById("b").className = "SelectorCrew "
+            document.getElementById("pilot").style.display = "none"
+
+
+            document.getElementById("c").className = "SelectorCrew selectedCrew"
+            document.getElementById("engineer").style.display = "initial"
+
+
+            document.getElementById("d").className = "SelectorCrew"
+            document.getElementById("specialist").style.display = "none"
+
+            break
+
+        case 4:
+            document.getElementById("imgCrew").src = "./assets/crew/image-mark-shuttleworth.png"
+
+
+            document.getElementById("a").className = "SelectorCrew"
+            document.getElementById("commander").style.display = "none"
+
+
+            document.getElementById("b").className = "SelectorCrew "
+            document.getElementById("pilot").style.display = "none"
+
+
+            document.getElementById("c").className = "SelectorCrew "
+            document.getElementById("engineer").style.display = "none"
+
+
+            document.getElementById("d").className = "SelectorCrew selectedCrew"
+            document.getElementById("specialist").style.display = "initial"
+
+
+
+            break
+
+    }
+
+}
+
+
+function tec(actualTec) {
+
+    switch (actualTec) {
+        case 1:
+            document.getElementById("vehicle").style.display = "initial"
+            document.getElementById("tecA").className = "tecButton buttonActive"
+
+            document.getElementById("spacePort").style.display = ""
+            document.getElementById("tecB").className = "tecButton"
+
+            document.getElementById("capsule").style.display = ""
+            document.getElementById("tecC").className = "tecButton"
+
+            document.getElementById("tecImage").src = "./assets/technology/image-launch-vehicle-landscape.jpg"
+
+            break
+
+
+        case 2:
+
+            document.getElementById("vehicle").style.display = "none"
+            document.getElementById("tecA").className = "tecButton"
+
+            document.getElementById("spacePort").style.display = "initial"
+            document.getElementById("tecB").className = "tecButton buttonActive"
+
+            document.getElementById("capsule").style.display = ""
+            document.getElementById("tecC").className = "tecButton"
+
+            document.getElementById("tecImage").src = "./assets/technology/image-spaceport-landscape.jpg"
+
+            break
+
+
+        case 3:
+            document.getElementById("vehicle").style.display = "none"
+            document.getElementById("tecA").className = "tecButton"
+
+            document.getElementById("spacePort").style.display = "none"
+            document.getElementById("tecB").className = "tecButton"
+
+            document.getElementById("capsule").style.display = "initial"
+            document.getElementById("tecC").className = "tecButton buttonActive"
+
+            document.getElementById("tecImage").src = "./assets/technology/image-space-capsule-landscape.jpg"
+
+            break
 
     }
 

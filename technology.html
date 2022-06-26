@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body id="tec">
+
+  <header>
+    <span id="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF" />
+          <path fill="#0B0D17"
+            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+        </g>
+      </svg>
+    </span>
+
+    <div id="menuIcon">
+      <div id="line1">
+
+      </div>
+
+      <div id="line2">
+
+
+      </div>
+
+      <div id="line3">
+
+      </div>
+      </svg>
+    </div>
+    <nav id=menu>
+      <ul>
+
+        <li onclick="redrec(1)" id="home_"> <span> 00</span> Home</li>
+        <li onclick="redrec(2)" id="destination_"> <span>01</span> Destination</li>
+        <li onclick="redrec(3)" id="crew_"> <span>02</span> Crew</li>
+        <li onclick="redrec(4)" id="tec_"> <span>03</span> Technology</li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <span id="msg"><span>03</span> Space launch 101</span>
+
+    <img id ="tecImage"src="assets/technology/image-launch-vehicle-landscape.jpg">
+
+    <nav id="tecNav">
+      <div id="tecA"  onclick="tec(1)" class="tecButton buttonActive">1</div>
+      <div id="tecB"  onclick="tec(2)" class="tecButton">2</div>
+      <div id="tecC"  onclick="tec(3)" class="tecButton">3</div>
+
+    </nav>
+
+
+    <span id="msg" class="c">The terminology...</span>
+
+    <section id="content">
+
+      <article id='vehicle'>
+
+        <h3>Launch vehicle</h3>
+
+        <p>
+
+          A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+          payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+          WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+          it's quite an awe-inspiring sight on the launch pad!
+
+        </p>
+
+      </article>
+
+      
+      <article id="spacePort">
+
+        <h3> Spaceport</h3>
+        <p>
+          A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+          by analogy to the seaport for ships or airport for aircraft. Based in the
+          famous Cape Canaveral, our spaceport is ideally situated to take advantage
+          of the Earth’s rotation for launch.
+        </p>
+      </article>
+      
+      <article id="capsule">
+        <h3> Space capsule</h3>
+        <p>
+          A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+          capsule to reenter the Earth's atmosphere without wings. Our capsule is where
+          you'll spend your time during the flight. It includes a space gym, cinema,
+          and plenty of other activities to keep you entertained.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+
+<script src="js/script.js"> </script>
+
+</html>
