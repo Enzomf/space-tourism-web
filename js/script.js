@@ -141,7 +141,7 @@ function crew(actualCrew){
     switch(actualCrew){
         case 1:
         
-        document.getElementById("imgCrew").src = "../assets/crew/image-douglas-hurley.png"
+        document.getElementById("imgCrew").src = "./assets/crew/image-douglas-hurley.png"
         
         document.getElementById("a").className = "SelectorCrew selectedCrew"
         document.getElementById("commander").style.display ="block"
@@ -159,7 +159,7 @@ function crew(actualCrew){
 
         case 2:
 
-       document.getElementById("imgCrew").src = "../assets/crew/image-victor-glover.png"
+       document.getElementById("imgCrew").src = "./assets/crew/image-victor-glover.png"
         
         document.getElementById("a").className = "SelectorCrew"
         document.getElementById("commander").style.display ="none"
@@ -180,7 +180,7 @@ function crew(actualCrew){
         break
 
         case 3:
-            document.getElementById("imgCrew").src = "../assets/crew/image-anousheh-ansari.png"
+            document.getElementById("imgCrew").src = "./assets/crew/image-anousheh-ansari.png"
         
             document.getElementById("a").className = "SelectorCrew"
             document.getElementById("commander").style.display ="none"
@@ -200,7 +200,7 @@ function crew(actualCrew){
             break
 
             case 4:
-                document.getElementById("imgCrew").src = "../assets/crew/image-mark-shuttleworth.png"
+                document.getElementById("imgCrew").src = "./assets/crew/image-mark-shuttleworth.png"
 
         
                 document.getElementById("a").className = "SelectorCrew"
