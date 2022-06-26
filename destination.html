@@ -57,10 +57,10 @@
     <nav id=menu>
       <ul>
 
-        <li onclick="redrec(1)" id="home_"> <span> 00</span> Home</li>
-        <li onclick="redrec(2)"id ="destination_"> <span>01</span> Destination</li>
-        <li onclick="redrec(3)"id ="crew_"> <span>02</span> Crew</li>
-        <li onclick="redrec(4)"id ="tec_"> <span>03</span> Technology</li>
+        <li onclick="redrec(1)"> <span> 00</span> Home</li>
+        <li onclick="redrec(2)"> <span>01</span> Destination</li>
+        <li onclick="redrec(3)"> <span>02</span> Crew</li>
+        <li onclick="redrec(4)"> <span>03</span> Technology</li>
 
       </ul>
     </nav>
@@ -70,11 +70,11 @@
 
   <main>
 
-    <span id="msg"> 01 Pick up you'r destination</span>
+    <span id="msg"> <span>01</span> Pick up you'r destination</span>
 
     <img id = "img"src="assets/destination/image-moon.png">
 
-    <ul>
+    <ul id ="destinSelect">
       <li onclick="destin(1)" id="moon" class="selected"> Moon</li>
       <li onclick="destin(2)" id="mars"> Mars</li>
       <li onclick="destin(3)"id="europa">Europa</li>
