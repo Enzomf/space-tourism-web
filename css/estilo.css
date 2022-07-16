@@ -1,0 +1,857 @@
+@font-face {
+    font-family: 'Bellefair', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    color: #FFFFFF;
+}
+
+/*----------------------------------------------- Mobile css ----------------------------------------------- */
+
+@media only screen and (max-width:480px) {
+
+    /* ----------------------------------------------------------- Home-------------------------------------------- */
+
+    body#home {
+        background-image: url("../assets/home/background-home-mobile_auto_x2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100vh;
+    }
+
+    p {
+        font-family: "Barlow", sans-serif;
+    }
+
+    /*---------------------------------------------- Header-----------------------------------------------------*/
+
+    header {
+
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    #logo {
+        margin: auto 0;
+    }
+
+
+
+
+    /* ------------------------------------------- Mobile Menu ----------------------------------------------------------*/
+
+    header nav {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 65%;
+        background-color: transparent;
+        height: 100vh;
+        display: none;
+        backdrop-filter: blur(30px);
+        padding: 40px;
+        animation: menuOPen 0.5s;
+        z-index: 1;
+    }
+
+    header #menuIcon {
+        width: 24px;
+        height: 32px;
+        z-index: 2;
+        margin: auto 20px;
+    }
+
+    header #menuIcon div {
+        width: 24px;
+        line-height: 2px;
+        border: white solid 1px;
+        margin: 6px;
+        transition: 0.5s;
+    }
+
+    header nav ul {
+        margin-top: 50px;
+        list-style: none;
+
+    }
+
+    header nav ul li {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        font-weight: 100;
+        padding: 10px;
+
+    }
+
+    header nav ul li span {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 400;
+    }
+
+    /* -------------------------------- Icon Animation ------------------------------ */
+
+
+
+    .change #line1 {
+
+        transform: translateY(8px) rotate(45deg);
+        margin-bottom: 0;
+        transition: 0.5s;
+
+    }
+
+    .change #line2 {
+        opacity: 0;
+
+    }
+
+    .change #line3 {
+
+        transform: translateY(-8px) rotate(-45deg);
+        margin-top: 0;
+        transition: 0.5s;
+
+    }
+
+
+    /* --------------------------------------- Menu Animation ------------------------------------ */
+
+
+    @keyframes menuOpen {
+        from {
+            transform: translateX(300px);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes menuClose {
+        from {
+
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(300px)
+        }
+    }
+
+
+
+    /* ---------------------------------------------  Main -------------------------------------- */
+
+    main {
+        display: flex;
+        flex-flow: column;
+        width: 80%;
+        margin: 30px auto;
+        align-items: center;
+        /* background-color: blue; */
+    }
+
+
+    #home span#msg {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: #D0D6F9;
+        line-height: 25px;
+    }
+
+    h1 {
+        font-size: 80px;
+        font-family: 'Bellefair', serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    main p {
+        text-align: center;
+        font-size: 15px;
+        font-family: "Barlow", sans-serif;
+        color: #D0D6F9;
+        margin-top: 30px;
+    }
+
+    #explore {
+        margin-top: 100px;
+        font-size: 20px;
+        font-family: 'Bellefair', serif;
+        letter-spacing: 1.25px;
+        color: #0B0D17;
+        background-color: #FFFFFF;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        border-radius: 100px;
+        text-transform: uppercase;
+    }
+
+
+
+
+    /* ========================================  destination =================================================*/
+
+    body#Destination {
+        background-image: url("../assets/destination/background-destination-mobile_digital_art_x4.jpg");
+        background-repeat: repeat-y;
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: auto;
+    }
+
+    span#msg {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: #FFFFFF;
+        line-height: 25px;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    span#msg span {
+        opacity: 0.7;
+    }
+
+    #Destination img {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    ul#destinSelect {
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    ul#destinSelect li {
+        font-family: "Barlow Condensed", serif;
+        color: #D0D6F9;
+        padding: 15px;
+        font-size: 16px;
+        float: left;
+
+    }
+
+
+    #Destination h1 {
+        font-size: 56px;
+    }
+
+    #description {
+
+        border-bottom: #fff 0.5px solid;
+        padding-bottom: 35px;
+        line-height: 25px;
+        position: relative;
+        top: -26px;
+        font-size: 16px;
+        text-align: center;
+
+    }
+
+    #data {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+
+    }
+
+    .dataTitle {
+
+
+        font-family: "Barlow Condensed", serif;
+        color: #D0D6F9;
+        margin-bottom: 20px;
+        font-size: 14px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    h2 {
+        font-family: 'Bellefair', serif;
+        font-weight: 400;
+        font-size: 28px;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+
+
+    }
+
+    .Europa {
+        display: none;
+    }
+
+
+    .Moon {
+        display: initial;
+    }
+
+
+    .Mars {
+        display: none;
+    }
+
+    .Titan {
+        display: none;
+    }
+
+    #Destination ul li.selected {
+        border-bottom: #D0D6F9 1px solid;
+        color: #FFFFFF;
+    }
+
+
+
+    /* ==================================================== Crew ================================================== */
+
+    body#crew {
+        width: 100%;
+        height: auto;
+        background-image: url('../assets/crew/background-crew-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        background-color: #0B0D17;
+
+    }
+
+    #crew #img {
+        border-bottom: rgba(255, 255, 255, 0.5) solid 1px;
+        margin: 10px 0;
+        height: 30vh;
+        display: flex;
+        justify-content: bottom;
+
+    }
+
+    #crew #img img {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    #crewSelector {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    #crew h3 {
+        text-align: center;
+        font-family: 'Bellefair', serif;
+        text-transform: uppercase;
+        opacity: 0.5;
+        font-weight: 100;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .SelectorCrew {
+
+        width: 14px;
+        height: 14px;
+        border-radius: 15px;
+        background-color: #FFFF;
+        border: #fff;
+        opacity: 0.4;
+
+    }
+
+    #crew #content {
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+    }
+
+    #crew p {
+        text-align: center;
+        font-size: 15px;
+        font-family: "Barlow", sans-serif;
+        color: #D0D6F9;
+        margin-top: 30px;
+        line-height: 25px;
+    }
+
+    .selectedCrew {
+        opacity: 1;
+    }
+
+    #pilot {
+        display: none;
+    }
+
+    #engineer {
+        display: none;
+    }
+
+    #specialist {
+        display: none;
+    }
+
+
+    /* ========================================== Tec ================================================ */
+
+    body#tec {
+        background-image: url("../assets/technology/background-technology-mobile_digital_art_x4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 110vh;
+    }
+
+    #tec img {
+        width: 126%;
+    }
+
+    nav#tecNav {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+
+    .tecButton {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0B0D17;
+        border: #fff solid 1px;
+        font-family: 'Bellefair', serif;
+
+    }
+
+    #tec span#msg.c {
+        color: #D0D6F9;
+    }
+
+
+    #tec h3 {
+        text-align: center;
+        font-family: 'Bellefair', serif;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 100;
+    }
+
+    #tec p {
+        line-height: 25px;
+        margin-top: 10px;
+    }
+
+    .buttonActive {
+        color: #0B0D17;
+        background-color: #fff;
+    }
+
+    #spacePort {
+        display: none;
+    }
+
+    #capsule {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width:481px) and (max-width:950px) {
+
+
+
+    body#home {
+        background-image: url("../assets/home/background-home-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 29px 39px;
+        min-width: 630px;
+
+    }
+
+    nav#menu {
+
+        position: absolute;
+        top: 0;
+        right: -20px;
+        padding: 30px;
+        padding-bottom: 0;
+        background-color: #0e1018;
+
+
+
+    }
+
+    nav#menu span {
+        display: none;
+
+    }
+
+    nav#menu li {
+        font-family: "Barlow Condensed", sans-serif;
+        float: left;
+        /* margin-top: auto 0; */
+        padding: 15px;
+        margin-right: 20px;
+        list-style: none;
+        margin-bottom: 0;
+        padding-bottom: 35px;
+
+    }
+
+
+
+    #home nav#menu li#home_,
+    #crew nav#menu li#crew_,
+    #Destination nav#menu li#destination_,
+    #tec nav#menu li#tec_ {
+        border-bottom: #fff solid 3px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: column;
+        width: 70%;
+        margin: 80px auto;
+        align-items: center;
+        /* background-color: blue; */
+    }
+
+
+    #home span#msg {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+        letter-spacing: 2.7px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: #D0D6F9;
+        line-height: 25px;
+    }
+
+     span#msg span{
+        font-weight: 700;
+        
+        color: #D0D6F9;
+        opacity: 0.5;
+    }
+
+    h1 {
+        font-size: 150px;
+        font-family: 'Bellefair', serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    main p {
+        text-align: center;
+        font-size: 18px;
+        font-family: "Barlow", sans-serif;
+        color: #D0D6F9;
+        margin-top: 30px;
+        line-height: 28px;
+    }
+
+    #explore {
+
+        margin-top: 140px;
+        font-size: 32px;
+        font-family: 'Bellefair', serif;
+        letter-spacing: 1.25px;
+        color: #0B0D17;
+        background-color: #FFFFFF;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        border-radius: 125px;
+        text-transform: uppercase;
+    }
+
+
+
+    /* ============================================ Destination ================================================= */
+
+    body#Destination {
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 630px;
+
+    }
+
+    span#msg {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+        letter-spacing: 2.7px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        color: #FFFFFF;
+        line-height: 25px;
+        text-transform: uppercase;
+        font-weight: 100;
+
+    }
+
+    #Destination span#msg {
+        position: relative;
+        left: -15vh;
+    }
+
+
+    img#img {
+        width: 65%;
+        margin-bottom: 20px;
+    }
+
+    ul#destinSelect {
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    ul#destinSelect li {
+        font-family: "Barlow Condensed", serif;
+        color: #D0D6F9;
+        padding: 15px;
+        font-size: 20px;
+        float: left;
+
+    }
+
+
+    #Destination h1 {
+        font-size: 80px;
+       
+
+    }
+
+    #description {
+
+        border-bottom: 0.2px solid #d0d6f977;
+        padding-bottom: 50px;
+        line-height: 25px;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+
+    #description p{
+        margin-top:2px;
+    }
+
+   
+
+
+
+
+    .dataTitle {
+
+
+        font-family: "Barlow Condensed", serif;
+        color: #D0D6F9;
+        margin-bottom: 20px;
+        font-size: 14px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    
+
+    h2 {
+        font-family: 'Bellefair', serif;
+        font-weight: 400;
+        font-size: 28px;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+
+
+    }
+
+    #Destination ul li.selected {
+        border-bottom: #D0D6F9 1px solid;
+        color: #FFFFFF;
+    }
+
+
+
+    .Europa {
+       display: none;
+    }
+
+    .Europa.data{
+        display: none;
+    }
+
+
+    .Moon {
+
+       display: initial;
+    }
+
+    .data{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:111px;
+    }
+
+
+
+
+
+    .Mars {
+        display: none;
+    }
+
+    .Titan {
+        display: none;
+    }
+
+
+    /* =============================== Crew ====================== */
+
+    body#crew {
+        background-image: url("../assets/crew/background-crew-tablet.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #crew main {
+        display: grid;
+        grid-template-rows: 0vh 15vh 5vh 60vh;
+        grid-template-areas:"p" "a" "s" "b";
+        gap:20px;
+    }
+
+   #crew #content{
+        grid-area:a;
+    }
+
+#crew    #msg{
+        grid-area: p;
+    }
+
+   
+    #crewSelector {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        justify-content: space-around;
+        grid-area: s;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .SelectorCrew {
+
+        width: 14px;
+        height: 14px;
+        border-radius: 15px;
+        background-color: #FFFF;
+        border: #fff;
+        opacity: 0.4;
+
+    }
+
+    #crew h3 {
+        text-align: center;
+        font-family: 'Bellefair', serif;
+        text-transform: uppercase;
+        opacity: 0.5;
+        font-weight: 100;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+
+
+   #crew #img{
+        grid-area: b;
+        background-color: red;
+        position: relative;
+       
+        width: 100%;
+        height: 60vh;
+
+        
+      
+    }
+
+    #crew img{
+          
+        position: absolute;
+        bottom: 0;    
+          
+    }
+
+    
+    #crew span#msg {
+        position: absolute;
+        top:136px;
+        left:39px;
+    }
+
+    
+    #pilot {
+        display: none;
+    }
+
+    #engineer {
+        display: none;
+    }
+
+    #specialist {
+        display: none;
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="crew">
+
+  <header>
+    <span id="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF" />
+          <path fill="#0B0D17"
+            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+        </g>
+      </svg>
+    </span>
+
+    <div id="menuIcon">
+      <div id="line1">
+
+      </div>
+
+      <div id="line2">
+
+
+      </div>
+
+      <div id="line3">
+
+      </div>
+      </svg>
+    </div>
+    <nav id=menu>
+      <ul>
+
+        <li onclick="redrec(1)" id="home_"> <span> 00</span> Home</li>
+        <li onclick="redrec(2)" id="destination_"> <span>01</span> Destination</li>
+        <li onclick="redrec(3)" id="crew_"> <span>02</span> Crew</li>
+        <li onclick="redrec(4)" id="tec_"> <span>03</span> Technology</li>
+
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    
+    <span id="msg"> <span>02</span> Meet your crew</span>
+
+    <section id=img>
+
+      <img id="imgCrew" src="assets/crew/image-douglas-hurley.png">
+
+    </section>
+
+    <nav id="crewSelector">
+      <div onclick="crew(1)" class="SelectorCrew selectedCrew" id="a"> </div>
+      <div onclick="crew(2)" class="SelectorCrew" id="b"> </div>
+      <div onclick="crew(3)" class="SelectorCrew" id="c"> </div>
+      <div onclick="crew(4)" class="SelectorCrew" id="d"></div>
+    </nav>
+
+
+    <section id="content">
+
+      <article id="commander">
+        <h3>Commander</h3>
+
+        <h2> Douglas Hurley</h2>
+
+        <p> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+          and former NASA astronaut. He launched into space for the third time as
+          commander of Crew Dragon Demo-2.
+        </p>
+      </article>
+
+      <article id="specialist">
+        <h3> Mission Specialist</h3>
+
+        <h2> Mark Shuttleworth</h2>
+
+        <p>
+          Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
+          the Linux-based Ubuntu operating system. Shuttleworth became the first South
+          African to travel to space as a space tourist.
+        </p>
+      </article>
+
+
+      <article id="pilot">
+        <h3>Pilot</h3>
+
+        <h2> Victor Glover</h2>
+
+        <p>
+          Pilot on the first operational flight of the SpaceX Crew Dragon to the
+          International Space Station. Glover is a commander in the U.S. Navy where
+          he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+          station systems flight engineer.
+        </p>
+      </article>
+
+
+      <article id="engineer">
+        <h3> Flight Engineer</h3>
+
+        <h2> Anousheh Ansari</h2>
+
+        <p>
+          Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+          Ansari was the fourth self-funded space tourist, the first self-funded woman to
+          fly to the ISS, and the first Iranian in space.
+        </p>
+      </article>
+
+
+
+
+
+
+
+
+    </section>
+  </main>
+</body>
+
+<script src="js/script.js"> </script>
+
+</html>
